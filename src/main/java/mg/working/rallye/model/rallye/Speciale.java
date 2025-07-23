@@ -11,7 +11,7 @@ public class Speciale {
     String id;
     @ManyToOne @JoinColumn(name = "id_rallye" , referencedColumnName = "id_rallye")
     Rallye rallye;
-    @Column(name = "distance" , scale = 2 , precision = 10)
+    @Column(name = "distance")
     double distance;
 
     public Speciale(String id, Rallye rallye, double distance) {
