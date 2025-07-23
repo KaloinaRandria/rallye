@@ -14,15 +14,12 @@ public class Rallye {
     String id;
     @Column(name = "edition")
     String edition;
-    @Column(nullable = false , updatable = false)
-    String rallyeCode;
 
 
 
-    public Rallye(String id, String edition, String rallyeCode) {
+    public Rallye(String id, String edition) {
         this.id = id;
         this.edition = edition;
-        this.rallyeCode = rallyeCode;
     }
 
     public Rallye() {
@@ -42,13 +39,5 @@ public class Rallye {
 
     public void setEdition(String edition) {
         this.edition = edition;
-    }
-
-    public String getRallyeCode() {
-        return rallyeCode;
-    }
-
-    public void setRallyeCode(String rallyeCode) {
-        this.rallyeCode = rallyeCode;
     }
 }
